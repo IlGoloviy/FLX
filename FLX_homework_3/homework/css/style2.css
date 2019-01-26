@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #efefef; }
+
+header {
+  background: url(../img/header_background_v2.jpg);
+  background-size: cover;
+  height: 100vh; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo img {
+      width: 200px; }
+    header .top-wrapper nav a {
+      text-decoration: none;
+      padding: 20px 100px;
+      display: inline-block;
+      color: #ff5747;
+      font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      text-transform: uppercase; }
+      header .top-wrapper nav a:nth-child(2n) {
+        border-left: 2px solid #cfd8dc;
+        border-right: 2px solid #cfd8dc; }
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header section h1 {
+      color: #ff5747;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 200px 0 10px;
+      font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 26px; }
+    header section a {
+      display: inline-block;
+      background-color: #0401ac;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 15px 80px;
+      border: none; }
+
+main {
+  max-width: 991px;
+  margin: auto; }
+  main .toolbar input {
+    background: inherit;
+    color: #757575;
+    border: 1px solid #757575;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    float: right; }
+  main .toolbar::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.post-list h1 {
+  text-transform: uppercase;
+  color: #757575;
+  text-align: right;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 26px;
+  font-weight: bold; }
+.post-list article {
+  display: flex;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 10px; }
+  .post-list article > div {
+    margin-left: 10px; }
+    .post-list article > div button {
+      float: right;
+      display: inline-block;
+      background-color: #0401ac;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 15px 80px;
+      border: none; }
+  .post-list article .post .post-description {
+    border-bottom: 1px solid #cfd8dc;
+    color: #bdbdbd;
+    padding: 10px 5px;
+    font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 15px; }
+  .post-list article .post h3 {
+    color: #607d8b;
+    font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 10px 0 10px;
+    font-weight: bold; }
+  .post-list article .post p {
+    color: #757575;
+    font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-bottom: 20px; }
+
+.about div {
+  padding: 0 20px 0; }
+.about h1 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #757575;
+  text-align: right;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 26px;
+  font-weight: bold; }
+.about p {
+  margin-bottom: 20px;
+  color: #757575;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+.about img {
+  max-width: 100%; }
+
+.contact-form h1 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #757575;
+  text-align: right;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 26px;
+  font-weight: bold; }
+.contact-form h4 {
+  text-transform: uppercase;
+  color: #757575;
+  text-align: right;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 26px;
+  font-weight: bold;
+  font-size: 18px; }
+.contact-form form .user-information {
+  float: left;
+  text-align: right;
+  width: 50%;
+  box-sizing: border-box; }
+  .contact-form form .user-information:first-child {
+    padding-right: 10px; }
+  .contact-form form .user-information:last-child {
+    padding-left: 10px; }
+  .contact-form form .user-information input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background: #efefef;
+    border: 1px solid #cfd8dc; }
+.contact-form form > div {
+  margin-top: 20px; }
+  .contact-form form > div:first-child::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .contact-form form > div:last-child {
+    text-align: right; }
+    .contact-form form > div:last-child input {
+      margin: 20px 0 20px;
+      display: inline-block;
+      background-color: #0401ac;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 15px 80px;
+      border: none; }
+.contact-form form textarea {
+  width: 100%;
+  height: 120px;
+  box-sizing: border-box;
+  background: #efefef;
+  border-color: #cfd8dc; }
+.contact-form form label {
+  color: #607d8b;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+footer span {
+  color: #757575;
+  padding: 15px 0 15px 15px; }

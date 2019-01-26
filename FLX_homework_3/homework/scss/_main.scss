@@ -1,0 +1,249 @@
+// Write your styles here
+@mixin btn {
+  display: inline-block;
+  background-color: $btnBackgroundColor;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $btnColor;
+  padding: 15px 80px;
+  border: none;
+}
+
+@mixin h1 {
+  text-transform: uppercase;
+  color: $searchColor;
+  text-align: right;
+  font: $fonts;
+  font-size: $fontSizeL;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bodyColor;
+}
+
+header {
+  background: $headerBackground;
+  background-size: cover;
+  height: 100vh;
+  
+  .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    .logo {
+      
+      img {
+        width: 200px;
+      }
+    }
+    
+    nav {
+      
+      a {
+        text-decoration: none;
+        padding: 20px 100px;
+        display: inline-block;
+        color: $headerTextColor;
+        font: $fonts;
+        text-transform: uppercase;
+        
+        &:nth-child(2n) {
+          border-left: 2px solid $menuBorderColor;
+          border-right: 2px solid $menuBorderColor;
+        }
+      }
+    }
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 {
+      color: $headerTextColor;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 200px 0 10px;
+      font: $fonts;
+      font-size: $fontSizeL;
+    }
+    
+    a {
+      @include btn;
+    }
+  }
+}
+
+main {
+  max-width: $mainWidth;
+  margin: auto;
+  
+  .toolbar {
+    
+    input {
+      background: inherit;
+      color: $searchColor;
+      border: 1px solid $searchColor;
+      padding: 10px 20px;
+      margin: 20px 10px;
+      float: right;
+      
+    }
+    
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.post-list {
+  
+  h1 {
+    @include h1;
+  }
+  
+  article {
+    display: flex;
+    background: $articleColor;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 10px;
+    
+    &>div {
+      margin-left: 10px;
+      
+      button {
+        float: right;
+        @include btn;
+      }
+    }
+    
+    .post {
+      
+      .post-description {
+        border-bottom: 1px solid $postDescBorderColor;
+        color: $postDescColor;
+        padding: 10px 5px;
+        font: $fonts;
+        font-size: ($fontSizeS - 3px);
+      }
+      
+      h3 {
+        color: $postHColor;
+        font: $fonts;
+        text-transform: uppercase;
+        font-size: $fontSizeL;
+        margin: 10px 0 10px;
+        font-weight: bold;
+      }
+      
+      p {
+        color: $postPColor;
+        font: $fonts;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.about {
+  div {
+    padding: 0 20px 0;
+  }
+  
+  h1 {
+    margin-top: 50px;
+    @include h1;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: $searchColor;
+    font: $fonts;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+}
+
+.contact-form {
+  h1 {
+    margin-top: 50px;
+    @include h1;
+  }
+  
+  h4 {
+    @include h1;
+    font-size: $fontSizeS;
+  }
+  
+  form {
+    .user-information {
+      float: left;
+      text-align: right;
+      width: 50%;
+      box-sizing: border-box;
+      &:first-child {
+        padding-right: 10px;
+      }
+      &:last-child {
+        padding-left: 10px;
+      }
+      
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        background: $bodyColor;
+        border: 1px solid $formBorderColor;
+      }
+    }
+    
+    >div {
+      margin-top: 20px;
+      
+      &:first-child::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      &:last-child {
+        text-align: right;
+        
+        input {
+          margin: 20px 0 20px;
+          @include btn;
+        }
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      box-sizing: border-box;
+      background: $bodyColor;
+      border-color: $formBorderColor;
+    }
+    
+    label {
+      color: $formTextColor;
+      font: $fonts;
+    }
+  }
+}
+
+footer {
+  span {
+    color: $searchColor;
+    padding: 15px 0 15px 15px;
+  }
+}
