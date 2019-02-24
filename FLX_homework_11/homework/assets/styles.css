@@ -1,0 +1,97 @@
+/* Your styles goes here */
+body {
+    margin: 0;
+    padding: 0;
+}
+#root {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 30px);
+}
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    margin-top: auto;
+    width: 100px;
+}
+hr {
+    border-color: black;
+    width: 100%;
+    margin: 15px 0;
+}
+.new-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.new-action input {
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 5px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+.new-action button {
+    background:#000;
+    border-radius: 3px;
+    color: #fff;
+    border-color: #000011;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#actions {
+    width: 100%;
+}
+#actions div {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    cursor: move;
+}
+#actions div input[type=checkbox] {
+    display: none;
+}
+#actions div input[type=checkbox] + label:before {
+    content: "done";
+    font-family: 'Material Icons';
+    color: transparent;
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 19px;    
+    font-weight: bold;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+#actions div input[type=checkbox]:checked + label:before {
+    color: #fff;
+    background: #000;
+}
+#actions div p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+#actions div button {
+    background: inherit;
+    padding: 0;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+}
+#actions div button i {
+    font-size: 30px;
+}
