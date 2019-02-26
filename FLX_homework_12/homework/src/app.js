@@ -1,11 +1,4 @@
 const rootNode = document.getElementById('root');
-
-const todoItems = [
-  {isDone: false, id: 12345, description: 'Todo 1'}
-];
-
-// Your code goes here
-
 const page1 = document.getElementById('page1');
 const page2 = document.getElementById('page2');
 const page3 = document.getElementById('page3');
@@ -116,5 +109,3 @@ window.addEventListener('hashchange', function() {
     page3.style.display = 'none';
   }
 });
-
-// rootNode.appendChild(/* Append your list item node*/);
